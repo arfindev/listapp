@@ -3,6 +3,7 @@ package com.example.movieapp_jetpack_compose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.ui.semantics.SemanticsProperties.Text
@@ -23,5 +24,4 @@ class MainActivity : ComponentActivity() {
 
         }
     }
-
-    }
+}

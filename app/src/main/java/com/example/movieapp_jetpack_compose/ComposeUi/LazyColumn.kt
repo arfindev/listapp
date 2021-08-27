@@ -20,9 +20,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 @Composable
 fun EachRow(movieLists: MovieDataClass) {
-    val checkedState = remember {
-        mutableStateOf(false)
-    }
+    val checkedState = remember { mutableStateOf(false) }
+
+
+
     Card(modifier = Modifier
         .padding(8.dp)
         .fillMaxWidth(),
@@ -40,7 +41,7 @@ fun EachRow(movieLists: MovieDataClass) {
                 .padding(8.dp)
                 .align(Alignment.CenterVertically)
                 .weight(5f))
-            
+
             Checkbox(
                 checked = checkedState.value,
                 onCheckedChange = { checkedState.value = it },
